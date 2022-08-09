@@ -52,6 +52,11 @@ h3{
   font-weight: VAR(--h1-font-weight);
   font-size: 18px;
 }
+.web-word{
+  font-weight: VAR(--h1-font-weight);
+  color: var(--button-text-color);
+  background-color: var(--primary-color);
+}
 /*===================================================*/
 /*============= LINKs CSS FILE ADJUSMENT ============*/
 /*===================================================*/
@@ -120,6 +125,7 @@ button:hover, button:focus,
 .profile{
   max-width: 700px;
   margin: 0 auto;
+  padding-top: 70px;
 }
 .profile__portrait{
   float: left;
@@ -224,9 +230,9 @@ button:hover, button:focus,
   margin-left: 15px;
 }
 
-.navigation-list li .navigation-list__item--active {
+/*.navigation-list li .navigation-list__item--active {
   text-decoration: none;
-}
+}*/
 /* Brackets go out */
 /*
 .navigation-list li a:before, .navigation-list li a:after
@@ -265,6 +271,15 @@ button:hover, button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 20px;
+}
+.index-footergap{
+  clear: both;
+  margin: 100px 0;
+  border: solid var(--button-text-color) 2px;
+}
+.work-titel{
+  text-align: center;  
 }
 /*===================================================*/
 /*=============== Work Page CSS-GRID ================*/
