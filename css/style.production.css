@@ -1,0 +1,481 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+Colors used:
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+/*body{
+  background-color: darkgray;
+}*/
+
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+/*===================================================*/
+/*========== Varabels SCSS ==========*/
+/*===================================================*/
+/*===================================================*/
+/*==== FONT STYLE + FONT SIZE + FONT LINE-HEIGHT ====*/
+/*============= For All Webpages ====================*/
+/*===================================================*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*Style HTML Headers <h> CSS*/
+/*===================================================*/
+/*========== H1, H2, H3 CSS FILE ADJUSMENT ==========*/
+/*===================================================*/
+h1{
+  font-weight: VAR(--h1-font-weight);
+  font-size: 32px;
+}
+h2{
+  font-weight: VAR(--h1-font-weight);
+  font-size: 24px;
+}
+h3{
+  font-weight: VAR(--h1-font-weight);
+  font-size: 18px;
+}
+/*===================================================*/
+/*============= LINKs CSS FILE ADJUSMENT ============*/
+/*===================================================*/
+/*Style HTML links <a> in CSS*/
+a{
+  color: #357b70;
+}
+a:visited{
+  color: #05676e;
+}
+a:hover, a:focus{
+  text-decoration: none;
+}
+a:active{
+  color: #489c79;
+}
+/*------About Page Link (Button) --------*/
+.button{
+  color: white;
+}
+.button:visited{
+  color: white;
+}
+.button:active{
+  color: white;
+}
+/*===================================================*/
+/*============ BUTTONs CSS FILE ADJUSMENT ===========*/
+/*===================================================*/
+/*Style HTML Buttons <button></button> at CSS*/
+input, textarea, select, button{
+  font-family: system-ui;
+}
+/*Button's Structure*/
+button{
+  /*A) overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /*B) takes the font from the outer container */
+  font-family: inherit;
+  /*C) styles the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /*D) width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /*transition-duration: 0.4s;
+  transition-property: opacity;*/
+  -webkit-transition: 0.4s opacity;
+  -o-transition: 0.4s opacity;
+  transition: 0.4s opacity;
+}
+.button{
+  /*A) overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /*B) takes the font from the outer container */
+  font-family: inherit;
+  /*C) styles the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /*D) width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /*transition-duration: 0.4s;
+  transition-property: opacity;*/
+  -webkit-transition: 0.4s opacity;
+  -o-transition: 0.4s opacity;
+  transition: 0.4s opacity;
+}
+/*Button's Reflections*/
+button:hover, button:focus,
+.button:hover, .button:focus{
+  /*A) lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /*B) reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+/* Another button to understand the heritage impact on other
+   buttons without writing code for each button again and again.
+   For this new button we only define Background color and Color.*/
+.button__secondary{
+  background-color: #e0b354;
+  color: undefined;
+}
+/*===================================================*/
+/*============= INDEX BODY - MAIN SECTION ===========*/
+/*========== Siavash Picture / Text / Link ==========*/
+/*===================================================*/
+.profile{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.profile__portrait{
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+  /*border-bottom: 7px solid rgba(0, 0, 0, 0.3);*/
+}
+/*===================================================*/
+/*========= ABOUT PAGE / BODY - MAIN SECTION ========*/
+/*================= Siavash Biography ===============*/
+/*===================================================*/
+.p__about{
+  /*clear: both;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.p__about--siavash{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align:justify;
+  margin-top: 15px;
+}
+.p__about--table{
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.p__about--techstack{
+  margin-top: 15px;
+}
+.p__about--techstack-li{
+  list-style-type: none;
+}
+.button{
+  margin-top: 15px;
+}
+/*.svg__berlin{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
+}
+.berlin-illustration{
+  margin-top: 15px;
+  width: 500px;
+  margin: 0 auto;
+}*/
+.svg__dubai{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 40%;
+  max-height: 500px;
+  margin: 0 auto;
+}
+.dubi-illustration{
+  max-width: 100%;
+  margin: 0 auto;
+}
+/*Berlin-Illustration Animation*/
+.sun{
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+.dubaicloud-koochakfront{
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+.dubaicloud-bigtop{
+  -webkit-animation: 20s cloudbig-move infinite alternate linear;
+          animation: 20s cloudbig-move infinite alternate linear;
+}
+.dubaistar-topburj{
+  -webkit-animation: 10s star-routate infinite alternate linear;
+          animation: 10s star-routate infinite alternate linear;
+}
+/*===================================================*/
+/*======= Header | Footer & it's childs FELEX =======*/
+/*===================================================*/
+.page-header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+  min-width: 200px;
+  min-height: 70px;
+}
+.page-header__item:last-child{
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+/*=========== Navigation FELEX ============*/
+.navigation-list{
+  list-style-type: none;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list li .navigation-list__item--active {
+  text-decoration: none;
+}
+/* Brackets go out */
+/*
+.navigation-list li a:before, .navigation-list li a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+.navigation-list li a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+.navigation-list li a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+.navigation-list li a:hover:before, .navigation-list li a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/*====================================*/
+/*=========== Footer FLEX ============*/
+.page-footer{
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+/*===================================================*/
+/*=============== Work Page CSS-GRID ================*/
+/*===================================================*/
+/* start grid fallback */
+.grid__item {
+ display: inline-block;
+ width: 33%;
+}
+/* end grid fallback */
+@supports (display: grid) {
+ .grid {
+   display: -ms-grid;
+   display: grid;
+   max-width: 800px;
+   margin: 0 auto;
+   /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 20px;
+ }
+ .grid__item {
+   background-color: lightgray;
+   width: auto;
+   min-height: auto;
+   margin: 0;
+   padding: 10px;
+ }
+ .grid__item:last-child {
+   -ms-grid-column: 3;
+   grid-column: 3 / 3;
+   -ms-grid-row: 1;
+   -ms-grid-row-span: 2;
+   grid-row: 1 / 3;
+ }
+}
+/*===================================================*/
+/*============= ANIMATION (@keyframes) ==============*/
+/*===================================================*/
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@-webkit-keyframes cloud-move {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(100px, -50px);
+            transform: translate(100px, -50px);
+  }
+  100% {
+    -webkit-transform: translate(200px, 0);
+            transform: translate(200px, 0);
+  }
+}
+
+@keyframes cloud-move {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(100px, -50px);
+            transform: translate(100px, -50px);
+  }
+  100% {
+    -webkit-transform: translate(200px, 0);
+            transform: translate(200px, 0);
+  }
+}
+
+@-webkit-keyframes cloudbig-move {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-200px, 0);
+            transform: translate(-200px, 0);
+  }
+}
+
+@keyframes cloudbig-move {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-200px, 0);
+            transform: translate(-200px, 0);
+  }
+}
+
+@-webkit-keyframes star-routate {
+  to{
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  from{
+    -webkit-transform: rotate(78deg);
+            transform: rotate(78deg);
+  }
+}
+
+@keyframes star-routate {
+  to{
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  from{
+    -webkit-transform: rotate(78deg);
+            transform: rotate(78deg);
+  }
+}
+
+/*===================================================*/
+/*================= @MEDIA (@media) =================*/
+/*===================================================*/
+@media all and (max-width: 500px){
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid{
+    grid-gap: 10px;
+  }
+  .grid__item:last-child{
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1, h2{
+    font-size: 20px;
+  }
+  .profile__portrait{
+    width: 150px;
+  }
+}
