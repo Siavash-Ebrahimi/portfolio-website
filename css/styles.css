@@ -278,8 +278,8 @@ button:hover, button:focus,
   margin: 100px 0;
   border: solid var(--button-text-color) 2px;
 }
-.work-titel{
-  text-align: center;  
+.center-titel{
+  text-align: center;
 }
 /*===================================================*/
 /*=============== Work Page CSS-GRID ================*/
