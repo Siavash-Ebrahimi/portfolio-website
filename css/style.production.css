@@ -92,6 +92,20 @@ a:active {
   color: white;
 }
 
+/* ------Work Page Link (Button) -------- */
+
+.button__work {
+  color: white;
+}
+
+.button__work:visited {
+  color: white;
+}
+
+.button__work:active {
+  color: white;
+}
+
 /* ===================================================
 ============ BUTTONs CSS FILE ADJUSMENT ===========
 =================================================== */
@@ -124,6 +138,29 @@ button {
   -webkit-transition: 0.4s opacity;
   -o-transition: 0.4s opacity;
   transition: 0.4s opacity;
+  text-align: center;
+}
+
+.button__work {
+  /* A) overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* B) takes the font from the outer container */
+  font-family: inherit;
+  /* C) styles the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* D) width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /* transition-duration: 0.4s;
+  transition-property: opacity; */
+  -webkit-transition: 0.4s opacity;
+  -o-transition: 0.4s opacity;
+  transition: 0.4s opacity;
+  text-align: center;
 }
 
 .button {
@@ -145,11 +182,14 @@ button {
   -webkit-transition: 0.4s opacity;
   -o-transition: 0.4s opacity;
   transition: 0.4s opacity;
+  text-align: center;
 }
 
 /* Button's Reflections */
 button:hover,
 button:focus,
+.button__work:hover,
+.button__work:focus,
 .button:hover,
 .button:focus {
   /* A) lets the mouse appear as a hand when hovering over the button */
@@ -161,10 +201,17 @@ button:focus,
 /* Another button to understand the heritage impact on other
    buttons without writing code for each button again and again.
    For this new button we only define Background color and Color. */
-.button__secondary {
-  background-color: #e0b354;
-  color: undefined;
+/* .button__secondary {
+  background-color: var(--Secondary-color);
+  color: var(--darkgray-clol);
+} */
+
+.button__work {
+  margin-top: 15px;
+  width: 100%;
+
 }
+
 
 /* ===================================================
 ============= INDEX BODY - MAIN SECTION ===========
@@ -178,12 +225,13 @@ button:focus,
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 300px;
   height: auto;
   margin-right: 40px;
-  border-radius: 50%;
+  border-radius: 10%;
   /* border-bottom: 7px solid rgba(0, 0, 0, 0.3); */
 }
+
 
 /* ===================================================
 ========= ABOUT PAGE / BODY - MAIN SECTION ========
@@ -201,11 +249,21 @@ button:focus,
   text-align: center;
 }
 
+.profile__portrait_about {
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10%;
+  /* border-bottom: 7px solid rgba(0, 0, 0, 0.3); */
+}
+
 .p__about--siavash {
-  max-width: 500px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: justify;
   margin-top: 15px;
+  font-weight: bold;
 }
 
 .p__about--table {
@@ -225,6 +283,7 @@ button:focus,
 .button {
   margin-top: 15px;
 }
+
 
 /* .svg__berlin {
   display: flex;
@@ -384,6 +443,7 @@ button:focus,
 /* ===================================================*
 /*=============== Work Page CSS-GRID ================*
 /*===================================================
+
 /* start grid fallback */
 .grid__item {
   display: inline-block;
@@ -412,13 +472,10 @@ button:focus,
     border: black;
   }
 
-  .grid__item:last-child {
-    -ms-grid-column: 3;
+  /* .grid__item:last-child {
     grid-column: 3 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1 / 3;
-  }
+  } */
 }
 
 /* ===================================================*

@@ -91,6 +91,14 @@ a:active {
   color: var(--button-text-color);
 }
 
+/* ------Work Page Link (Button) -------- */
+
+.button__work,
+.button__work:visited,
+.button__work:active {
+  color: var(--button-text-color);
+}
+
 /* ===================================================
 ============ BUTTONs CSS FILE ADJUSMENT ===========
 =================================================== */
@@ -105,6 +113,7 @@ button {
 
 /* Button's Structure */
 button,
+.button__work,
 .button {
   /* A) overwrites browser defaults and resets the border */
   border: none;
@@ -122,11 +131,14 @@ button,
   /* transition-duration: 0.4s;
   transition-property: opacity; */
   transition: 0.4s opacity;
+  text-align: center;
 }
 
 /* Button's Reflections */
 button:hover,
 button:focus,
+.button__work:hover,
+.button__work:focus,
 .button:hover,
 .button:focus {
   /* A) lets the mouse appear as a hand when hovering over the button */
@@ -138,10 +150,17 @@ button:focus,
 /* Another button to understand the heritage impact on other
    buttons without writing code for each button again and again.
    For this new button we only define Background color and Color. */
-.button__secondary {
+/* .button__secondary {
   background-color: var(--Secondary-color);
   color: var(--darkgray-clol);
+} */
+
+.button__work {
+  margin-top: 15px;
+  width: 100%;
+
 }
+
 
 /* ===================================================
 ============= INDEX BODY - MAIN SECTION ===========
@@ -155,10 +174,10 @@ button:focus,
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 300px;
   height: auto;
   margin-right: 40px;
-  border-radius: 50%;
+  border-radius: 10%;
   /* border-bottom: 7px solid rgba(0, 0, 0, 0.3); */
 }
 
@@ -174,11 +193,21 @@ button:focus,
   text-align: center;
 }
 
+.profile__portrait_about {
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10%;
+  /* border-bottom: 7px solid rgba(0, 0, 0, 0.3); */
+}
+
 .p__about--siavash {
-  max-width: 500px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: justify;
   margin-top: 15px;
+  font-weight: bold;
 }
 
 .p__about--table {
@@ -198,6 +227,7 @@ button:focus,
 .button {
   margin-top: 15px;
 }
+
 
 /* .svg__berlin {
   display: flex;
